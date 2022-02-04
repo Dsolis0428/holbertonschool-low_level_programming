@@ -14,8 +14,8 @@ int main(void)
 
 	for (number = 0; number < 10; number++)
 	{
-	        sing = number % 10;
-		putchar(sing);
+		sing = number % 10;
+		putchar(sing + '0');
 	}
 	putchar('\n');
 	return (0);
