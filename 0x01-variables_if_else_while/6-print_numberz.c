@@ -17,6 +17,6 @@ int main(void)
 	        sing = number % 10;
 		putchar(sing);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
