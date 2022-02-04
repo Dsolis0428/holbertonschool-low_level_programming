@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - prints alphabet in order and backwards
+ * main - prints alphabet backwards
  *
  * Return: Always 0.
  */
@@ -11,11 +11,7 @@ int main(void)
 {
 
 	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		putchar(letter);
-	}
+}
 	for (letter = 'z'; letter <= 'a'; letter--)
 	{
 		putchar(letter);
