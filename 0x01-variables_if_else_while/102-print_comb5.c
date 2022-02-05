@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main -  program that prints all possible combinations of two two-digit numbers.
- *
+ * main -  program that prints all possible combinations of two two-digit
+ *         numbers.
  * Return: Always 0.
  */
 int main(void)
 {
 	int digi1, digi2;
 
-	for (digi1 = 0; digi1 <=98 ; digi1++)
+	for (digi1 = 0; digi1 <= 98 ; digi1++)
 	{
 		for (digi2 = digi1 + 1; digi2 <= 99; digi2++)
 		{
