@@ -13,10 +13,10 @@ int main(void)
 	for (digi1 = 0; digi1 < 9; digi1++)
 	{
 		for (digi2 = digi1 + 1; digi2 < 10; digi2++)
-		digi1 = digi1 % 10;
-		digi2 = digi2 % 10;
-		putchar(digi1 + '0');
-		putchar(digi2 + '0');
+		digi1 = digi1 % 10 + '0';
+		digi2 = digi2 % 10 + '0';
+		putchar(digi1);
+		putchar(digi2);
 
 		if (digi1 == 8 && digi2 == 9)
 			continue;
