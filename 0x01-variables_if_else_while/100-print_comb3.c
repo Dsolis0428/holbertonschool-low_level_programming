@@ -14,13 +14,10 @@ int main(void)
 	{
 		for (digi2 = 0 ; digi2 <= 10; digi2++)
 		{
-			if (digi1 < digi2)
-			{
-				putchar((digi1 % 10) + '0');
-				putchar((digi2 % 10) + '0');
-				if (digi1 == 8 && digi2 == 9)
-				{
-					continue;
+			putchar((digi1 % 10) + '0');
+			putchar((digi2 % 10) + '0');
+			if (digi1 == 8 && digi2 == 9 )
+				continue;
 					putchar(',');
 					putchar(' ');
 				}
