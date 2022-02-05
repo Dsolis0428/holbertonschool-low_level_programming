@@ -15,7 +15,7 @@ int main(void)
 		{
 			putchar((digi1 / 10) + '0');
 			putchar((digi1 % 10) + '0');
-			putchar(' ')
+			putchar(' ');
 			putchar((digi2 / 10) + '0');
 			putchar((digi2 % 10) + '0');
 			if (digi1 == 98 && digi2 == 99)
