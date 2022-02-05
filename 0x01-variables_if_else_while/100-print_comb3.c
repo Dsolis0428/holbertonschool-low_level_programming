@@ -18,7 +18,7 @@ int main(void)
 			{
 				putchar(digi1);
 				putchar(digi2);
-				if (digi1 != 8 || (digi2 == 8 && digi2 != 9))
+				if (digi1 != 8 || (digi1 == 8 && digi2 != 9))
 				{
 					continue;
 					putchar(',');
