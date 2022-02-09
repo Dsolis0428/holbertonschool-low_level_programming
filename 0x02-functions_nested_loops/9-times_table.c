@@ -19,7 +19,7 @@ void jack_bauer(void)
 			
 			anws = num * multi
 		}
-		if (anws <= 9)
+		if (answ <= 9)
 		{
 			_putchar(' ');
 		}
