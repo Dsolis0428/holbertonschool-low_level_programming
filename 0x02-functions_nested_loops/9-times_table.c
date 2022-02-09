@@ -17,7 +17,7 @@ void jack_bauer(void)
 			_putchar(',');
 			_putchar(' ');
 			
-			anws = num * multi
+			answ = num * multi
 		}
 		if (answ <= 9)
 		{
