@@ -18,17 +18,17 @@ void times_table(void)
 			_putchar(' ');
 			
 			answ = num * multi;
-		}
+		
 		if (answ <= 9)
-		{
+		
 			_putchar(' ');
-		}
+		
 		else
-		{
+		
 			_putchar((answ / 10) + '0');
-		}
+		
 		_putchar ((answ % 10) + '0');
-	}
+		}
 	_putchar('\n');
+	}
 }
-
