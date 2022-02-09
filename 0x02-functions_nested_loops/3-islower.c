@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks for lowercase characters.
+ * c = character thats going be checked
  *
  * Return 0 if chartacter is not lower case, 1 if it is.
  */
