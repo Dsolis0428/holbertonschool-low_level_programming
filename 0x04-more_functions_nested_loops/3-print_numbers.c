@@ -2,8 +2,8 @@
 
 /**
  * print_numbers - prints the numbers from 0-9
- * 
- * 
+ *
+ *
  *
  * Return: always 0
  */
