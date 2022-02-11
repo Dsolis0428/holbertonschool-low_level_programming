@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * print_square - prints a square of desire input
+ * print_square - prints a square of desired size
  * @size: size of square
  *
  * Return: void
  */
 
 
-void print_diagonal(int size)
+void print_square(int size)
 {
 	int line, square;
 
-	if (n <= 0)
+	if (size <= 0)
 		_putchar('\n');
 	for (line = 0; line < size; line++)
 	{
-		for (square = 0; square < (size); b++)
+		for (square = 0; square < (size); square++)
 		{
 			_putchar('#');
 		}
