@@ -4,7 +4,7 @@
  * prints_diagonal - Prints a diagonal line.
  * @n: length of line
  */
-void more_numbers(void)
+void prints_diagonal(int n)
 {
 	int diag, line;
 
