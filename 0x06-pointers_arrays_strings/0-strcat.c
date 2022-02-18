@@ -1,12 +1,11 @@
 #include "main.h"
-
+#include<stdio.h>
 /**
- *_strcat - concatinate 2 strings.
- *@dest: first string.
- *@src: second string.
- *Return: string.
+ * _strcat - return size of strlen
+ * @dest: pointer to array 1
+ * @src: pointer to array 2
+ * Return: dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
