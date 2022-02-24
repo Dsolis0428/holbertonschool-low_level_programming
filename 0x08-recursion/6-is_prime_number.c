@@ -25,5 +25,5 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	return (prime:|_checker(2, n));
+	return (prime_checker(2, n));
 }
