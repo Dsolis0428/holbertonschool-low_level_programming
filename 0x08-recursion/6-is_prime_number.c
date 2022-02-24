@@ -6,13 +6,13 @@
  *Return: int.
  */
 
-int primenum_checker(int i, int n)
+int prime_checker(int i, int n)
 {
 	if (i == n)
 		return (1);
 	else if (n % i == 0)
 		return (0);
-	return (primnum_checker(i + 1, n));
+	return (prime_checker(i + 1, n));
 }
 
 /**
@@ -25,5 +25,5 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	return (primenum_checker(2, n));
+	return (prime:|_checker(2, n));
 }
