@@ -8,7 +8,6 @@
  */
 
 int sqroot(int i, int n)
-	
 {
 
 	if (i * i > n)
