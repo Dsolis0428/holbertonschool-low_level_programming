@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- *sqrt - find a square root of an integer.
+ *sqroot - find a square root of an integer.
  *@n: integer.
  *@i: counter.
  *Return: square root (n).
  */
 
-int sqrt(int i, int n)
+int sqroot(int i, int n)
+	
 {
 
 	if (i * i > n)
 		return (-1);
 	else if (i * i == n)
 		return (i);
-	return (sqrt(i + 1, n));
+	return (sqroot(i + 1, n));
 }
 /**
  *_sqrt_recursion - find a square root of an integer.
@@ -28,5 +29,5 @@ int _sqrt_recursion(int n)
 
 	if (n < 1)
 		return (-1);
-	return (sqrt(a, n));
+	return (sqroot(a, n));
 }
