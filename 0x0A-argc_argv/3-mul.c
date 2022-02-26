@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *main - print the multiplication of 2 numbers.
+ *@argc: array length.
+ *@argv: array.
+ *Return: 0.
+ */
 int main(int argc, char *argv[])
 {
 	int num1, num2, prod;
