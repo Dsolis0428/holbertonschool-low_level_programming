@@ -34,3 +34,4 @@ int **alloc_grid(int width, int height)
 		for (w = 0; w < width; w++)
 			grid[h][w] = 0;
 	return (grid);
+}
