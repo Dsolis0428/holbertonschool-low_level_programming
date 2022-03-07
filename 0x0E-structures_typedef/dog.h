@@ -3,9 +3,9 @@
 
 /**
  * struct dog - Dog description.
- * @name: Name of dog.
- * @age: Age of dog.
- * @owner: Owner of dog.
+ * @name: Dog name.
+ * @age: Dog age.
+ * @owner: Dog's owner.
  **/
 
 typedef struct dog
