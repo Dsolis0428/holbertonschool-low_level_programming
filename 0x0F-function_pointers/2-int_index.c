@@ -1,19 +1,26 @@
 #include "function_pointers.h"
+
 /**
- * array_iterator - Call for another function for each element of an array.
+ * int_index - Search for the posistion of
+ * an element in array that meet the condition in the cmp function.
  * @array: Array address.
  * @size: Array size.
- * @action: Function address.
+ * @cmp: Address of function called.
+ * Return: integer.
  **/
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t i = 0;
+	int i = 0;
 
-	if (array && action)
+	if (array && cmp && size > 0)
 	{
-		for ( i; i < size; i++)
-			action(array[i]);
+		for (; i < size; i++)
+		{
+			if (cmp(array[i]) != 0)
+				return (i);
+		}
+		return (-1);
 	}
+	return (-1);
 }
-
