@@ -1,9 +1,4 @@
-/*
- * File: 3-cp.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -105,4 +100,4 @@ int main(int argc, char *argv[])
 	close_file(to);
 
 	return (0);
-} 
+}
