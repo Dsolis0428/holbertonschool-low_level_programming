@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: 3-cp.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -80,23 +85,24 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(98);
 		}
-OAOAOA
+
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-OAOAOA				"Error: Can't write to %s\n", argv[2]);
+				"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
 
-OAOAOA		r = read(from, buffer, 1024);
+		r = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-OAOAOA
-OAOAOA	} while (r > 0);
+
+	} while (r > 0);
 
 	free(buffer);
 	close_file(from);
 	close_file(to);
 
-	return 
+	return (0);
+} 
