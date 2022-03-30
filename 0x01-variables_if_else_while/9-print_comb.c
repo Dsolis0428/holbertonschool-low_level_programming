@@ -10,7 +10,7 @@ int main(void)
 {
 	int i = 48;
 
-	for (i; i <= 57; i++)
+	for(i; i <= 57; i++)
 	{
 		putchar(i);
 		putchar(',');
