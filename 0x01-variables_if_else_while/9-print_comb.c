@@ -3,19 +3,16 @@
 /**
  * main - prints number 0-9 with putchar
  *
+ *
  * Return: Always 0.
  */
 int main(void)
 {
+	int i = 48;
 
-	int number, sing;
-
-	for (number = 0; number < 10; number++)
+	for (i; i <= 57; i++)
 	{
-		sing = number % 10;
-		putchar(sing + '0');
-		if (sing == 9)
-			continue;
+		putchar(i);
 		putchar(',');
 		putchar(' ');
 	}
