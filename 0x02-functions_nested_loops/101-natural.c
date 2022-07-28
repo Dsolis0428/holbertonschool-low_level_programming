@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int x = 0;
+	int x;
 	int answ = 0;
 
-	for (x; x < 1024; x++)
+	for (x = 0; x < 1024; x++)
 	{
 		if (x % 3 == 0 || x % 5 == 0)
 		{
