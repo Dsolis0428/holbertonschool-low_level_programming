@@ -14,7 +14,7 @@ int main(void)
 	for (i = 1; i <= 50; i++)
 	{
 		num3 = num1 + num2;
-		printf("%ld, ", num3);
+		printf("%ld", num3);
 		num1 = num2;
 		num2 = num3;
 
@@ -22,7 +22,7 @@ int main(void)
 		{
 			printf("\n");
 		}
-		else 
+		else
 		{
 			printf(", ");
 		}
