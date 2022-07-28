@@ -11,7 +11,7 @@ int main(void)
 	long int num3;
 	int i;
 
-	for (i = 1; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		num3 = num1 + num2;
 		printf("%ld", num3);
