@@ -17,7 +17,15 @@ int main(void)
 		printf("%ld, ", num3);
 		num1 = num2;
 		num2 = num3;
+
+		if (i == 49)
+		{
+			printf("\n");
+		}
+		else 
+		{
+			printf(", ");
+		}
 	}
-	printf("\n");
 	return (0);
 }
