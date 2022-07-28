@@ -6,13 +6,12 @@
  */
 int main(void)
 {
-	long int num1 = 1;
+	long int num1 = 0;
 	long int num2 = 1;
 	long int num3;
 	int i;
 
-	printf("%ld, ", num1);
-	for (i = 2; i <= 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		num3 = num1 + num2;
 		printf("%ld, ", num3);
