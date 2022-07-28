@@ -6,15 +6,16 @@
  */
 int main(void)
 {
-	int num1 = 1;
-	int num2 = 1;
-	int num3, i;
+	long int num1 = 1;
+	long int num2 = 1;
+	long int num3;
+	int i;
 
-	printf("%d, %d, ", num1, num2);
+	printf("%ld, %ld, ", num1, num2);
 	for (i = 2; i <= 50; i++)
 	{
 		num3 = num1 + num2;
-		printf("%d, ", num3);
+		printf("%ld, ", num3);
 		num1 = num2;
 		num2 = num3;
 	}
