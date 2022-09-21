@@ -19,7 +19,7 @@ int _atoi(char *s)
 		sign = -1;
 		index++;
 	}
-	for (index; s[index] != '\0'; index++)
+	for (; s[index] != '\0'; index++)
 	{
 		result = result * 10 + s[index] - '0';
 	}
