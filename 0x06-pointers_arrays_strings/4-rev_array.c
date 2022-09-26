@@ -1,21 +1,26 @@
+/*
+ * File: 4-rev_array.c
+ * Auth: Dylan Alberto Solis Martin (Bimbsy)
+ */
+
 #include "main.h"
 
 /**
  *reverse_array - reverse an array.
- *@a: array.
- *@n: array's length.
+ *@a: Pointer to an array.
+ *@n: Length of array.
  */
 
 void reverse_array(int *a, int n)
 {
-	int i, j, temp;
+	int index, index_end, holder;
 
-	j = n - 1;
-	for (i = 0; i < n / 2; i++)
+	index_end = n - 1;
+	for (index = 0; index < n / 2; i++)
 	{
-		temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
-		j--;
+		holder = a[index];
+		a[index] = a[index_end];
+		a[index_end] = holder;
+		index_end--;
 	}
 }
