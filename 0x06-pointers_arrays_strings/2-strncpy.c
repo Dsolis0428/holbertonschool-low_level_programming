@@ -1,4 +1,10 @@
+/*
+ * File: 2-strncpy.c
+ * Auth: Dylan Alberto Solis Martin
+ */
+
 #include "main.h"
+
 
 /**
  *_strncpy - copy src into dest.
@@ -10,25 +16,19 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, k = 0;
+	int index = 0, src_length = 0;
 
-	while (n > k)
+	while (src[index++])
 	{
-		if (src[k] == '\0')
-		{
-			for (; k < n; k++)
-			{
-				dest[i] = '\0';
-				i++;
-			}
-		}
-		else
-		{
-			dest[i] = src[k];
-			k++;
-			i++;
-		}
+		src_length++;
 	}
-
+	for (index = 0; src[index] && index < n; index++)
+	{
+		dest[index] = src[index];
+	}
+	for (index = src_length; index < n; index++)
+	{
+		dest[index] = '\0';
+	}
 	return (dest);
 }
