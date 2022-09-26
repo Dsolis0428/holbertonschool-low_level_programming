@@ -13,7 +13,7 @@ char *leet(char *s)
 	char array_up[] = {'A', 'E', 'L', 'O', 'T'};
 	char array_low[] = {'a', 'e', 'l', 'o', 't'};
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		for (j = 0; j < 5; j++)
 		{
