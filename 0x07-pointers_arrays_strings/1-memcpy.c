@@ -1,20 +1,25 @@
+/*
+ * File: 1-memcpy.c
+ * Auth: Dylan Alberto Solis Martin
+ */
+
 #include "main.h"
 
 /**
- *_memcpy - copy n bytes from src to dest.
- *@dest: the string to copy into it.
- *@src: the string to copy from.
- *@n: the number of bytes to copy.
- *Return: dest.
+ * _memcpy - copy n bytes from src to dest.
+ * @dest: Pointer to the string to copy into it.
+ * @src: Pointer to the string to copy from.
+ * @n: The number of bytes to copy.
+ * Return: Pointer dest.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	unsigned int index;
 
-	for (i = 0; i < n; i++)
+	for (index = 0; index < n; index++)
 	{
-		dest[i] = src[i];
+		dest[index] = src[index];
 	}
 
 	return (dest);
