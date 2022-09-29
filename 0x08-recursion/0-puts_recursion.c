@@ -1,9 +1,15 @@
+/*
+ * File: 0-puts_recursion
+ * Auth: Dylan Alberto Solis Martin (Bimbsy)
+ */
+
 #include "main.h"
 
 /**
  * _puts_recursion - Prints a string, followed by a new line.
- * @s: The string to be printed.
+ * @s: Pointer to the string to be printed.
  */
+
 void _puts_recursion(char *s)
 {
 	if (*s)
