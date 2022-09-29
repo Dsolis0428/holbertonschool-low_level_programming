@@ -1,3 +1,8 @@
+/* 
+ * File: 3-factorial.c
+ * Auth: Dylan Alberto Solis Martin (Bimbsy)
+ */
+
 #include "main.h"
 
 /**
