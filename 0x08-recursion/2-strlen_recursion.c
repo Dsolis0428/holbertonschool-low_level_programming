@@ -1,3 +1,8 @@
+/*
+ * File: 1-print_rev_recursion.c
+ * Auth: Dylan Alberto Solis Martin (Bimbsy)
+ */
+
 #include "main.h"
 /**
  * _strlen_recursion - Returns the length of a string.
