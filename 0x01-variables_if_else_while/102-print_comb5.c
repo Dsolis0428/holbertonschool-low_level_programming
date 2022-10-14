@@ -12,6 +12,8 @@
  *        1 should be printed as 01.
  *        The combination of numbers must be separated by comma,
  *        followed by a space.
+ *
+ * Return: Always 0 (Success).
  */
 
 int main(void)
