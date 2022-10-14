@@ -1,30 +1,45 @@
+/*
+ * File: 100-print_comb3.c
+ * Auth: Dylan Alberto Solis Martin(Bimbsy)
+ */
+
 #include <stdio.h>
 
 /**
- * main - prints number 0-9 with putchar
+ * main - Prints all posible combinations of three digits.
+ *        The three digits must be diffrent. 012, 120, 102, 201, 210 are
+ *        consider the same three digits of 0, 1 and 2.
+ *        Numbers are seperated by ',' and followed by a space.
+ *        Numbers printed in ascending order using putchar.
  *
- * Return: Always 0.
+ * Return: Always 0 (Success).
  */
+
 int main(void)
 {
-	int digi1, digi2, digi3;
+	int digit1, digit2, digit3;
 
-	for (digi1 = 0; digi1 < 8; digi1++)
+	for (digit1 = 48; digit1 <= 55; digit1++)
 	{
-		for (digi2 = digi1 + 1; digi2 < 9; digi2++)
+		for (digit2 = digit1 + 1; digit2 <= 56; digit2++)
 		{
-			for (digi3 = digi2 + 1; digi3 < 10; digi3++)
+			for (digit3 = digit2 + 1; digit3 <= 57; digit3++)
 			{
-				putchar((digi1 % 10) + '0');
-				putchar((digi2 % 10) + '0');
-				putchar((digi3 % 10) + '0');
-				if (digi1 == 7 && digi2 == 8 && digi3 == 9)
+				putchar(digit1);
+				putchar(digit2);
+				putchar(digit3);
+				if (digit1 == 55 && digit2 == 56 && digit3 == 57)
+				{
 					continue;
-				putchar(',');
-				putchar(' ');
+				}
+			putchar(',');
+			putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+

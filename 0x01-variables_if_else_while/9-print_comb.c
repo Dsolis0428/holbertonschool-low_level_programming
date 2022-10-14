@@ -1,26 +1,35 @@
+/*
+ * File: 9-print_comb.c
+ * Auth: Dylan Alberto Solis Martin(Bimbsy)
+ */
+
 #include <stdio.h>
 
 /**
- * main - prints number 0-9 with putchar
+ * main - Prints all posible combinations of single-digit numbers.
+ *        numbers are seperated by ',' and followed by a space.
+ *        Numbers printed in ascending order using putchar.
  *
- *
- * Return: Always 0.
+ * Return: Always 0 (Success).
  */
+
 int main(void)
 {
-	int i;
+	int digit;
 
-	for (i = 48; i <= 57; i++)
+	for (digit = 48; digit <= 57; digit++)
 	{
-		putchar(i);
-		if (i == 57)
+		putchar(digit);
+		if (digit == 57)
 		{
 			continue;
 		}
-
 		putchar(',');
 		putchar(' ');
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+

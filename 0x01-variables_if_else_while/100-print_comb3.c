@@ -1,26 +1,40 @@
+/*
+ * File: 100-print_comb3.c
+ * Auth: Dylan Alberto Solis Martin(Bimbsy)
+ */
+
 #include <stdio.h>
 
 /**
- * main - prints number 0-9 with putchar
+ * main - Prints all posible combinations of two digits.
+ *        The two digits must be diffrent. 01 and 10 are consider the same.
+ *        Numbers are seperated by ',' and followed by a space.
+ *        Numbers printed in ascending order using putchar.
  *
- * Return: Always 0.
+ * Return: Always 0 (Success).
  */
+
 int main(void)
 {
-	int digi1, digi2;
+	int digit1, digit2;
 
-	for (digi1 = 0; digi1 < 9; digi1++)
+	for (digit1 = 48; digit1 <= 56; digit1++)
 	{
-		for (digi2 = digi1 + 1; digi2 < 10; digi2++)
+		for (digit2 = digit1 + 1; digit2 <= 57; digit2++)
 		{
-			putchar((digi1 % 10) + '0');
-			putchar((digi2 % 10) + '0');
-			if (digi1 == 8 && digi2 == 9)
+			putchar(digit1);
+			putchar(digit2);
+			if (digit1 == 56 && digit2 == 57)
+			{
 				continue;
-					putchar(',');
-					putchar(' ');
+			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+

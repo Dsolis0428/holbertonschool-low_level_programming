@@ -1,32 +1,39 @@
+/*
+ * File: 1-last_digit.c
+ * Auth: Dylan Alberto Solis Martin (Bimbsy)
+ */
+
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
- * main - prints last digit of random num and if it is >5.<6,or 0.
+ * main - Program assigns a random number to the variable n, and prints the
+ *        the last digit of the number stored in n.
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int n, lastdigit;
+
+	int n, lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastdigit = n % 10;
-	if (lastdigit > 5)
+	lastDig = n % 10;
+
+	if (lastDig > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastDig);
 	}
-	else if (lastdigit == 0)
+	else if (lastDig == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n, lastdigit);
+		printf("Last digit of %d is %d and is 0\n", n, lastDig);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastdigit)
-			;
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDig);
 	}
-
 	return (0);
 }

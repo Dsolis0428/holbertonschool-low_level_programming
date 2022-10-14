@@ -1,22 +1,27 @@
-#include <stdlib.h>
-#include <time.h>
+/*
+ * File: 6-print_numberz.c
+ * Auth: Dylan Alberto Solis Martin
+ */
+
 #include <stdio.h>
 
 /**
- * main - prints number 0-9 with putchar
+ * main - Prints all single digit numbers of base 10 starting from 0,
+ *        followed by a new line. Using putchar.
  *
- * Return: Always 0.
+ * Return: Always 0 (Success).
  */
+
 int main(void)
 {
+	int number;
 
-	int number, sing;
-
-	for (number = 0; number < 10; number++)
+	for (number = 48; number <= 57; number++)
 	{
-		sing = number % 10;
-		putchar(sing + '0');
+		putchar(number);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
